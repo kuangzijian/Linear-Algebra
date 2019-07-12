@@ -5,7 +5,6 @@ B = np.abs(np.round(5*np.random.randn(2,3)))
 
 print(A)
 print(B)
-print("Test")
 
 r1 = 0
 for i in range(0, len(B)):
