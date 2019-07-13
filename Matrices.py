@@ -1,6 +1,6 @@
 import numpy as np
 
-# VIDEO: A zoo of matrices
+# A zoo of matrices
 
 
 # square vs. rectangular
@@ -32,7 +32,7 @@ B = np.random.randn(2,5)
 C = np.concatenate((A,B), axis=1)
 print(C)
 
-# VIDEO: Matrix addition and subtraction
+# Matrix addition and subtraction
 
 # create random matrices
 A = np.random.randn(5,4)
@@ -51,7 +51,7 @@ D = np.random.randn(N,N) # can only shift a square matrix
 Ds = D + l*np.eye(N)
 print(Ds)
 
-# VIDEO: Matrix-scalar multiplication
+# Matrix-scalar multiplication
 
 # define matrix and scalar
 M = np.array([ [1, 2], [2, 5] ])
@@ -75,7 +75,7 @@ print(r1)
 r2 = s * A + s * B
 print(r2)
 
-# VIDEO: Diagonal and trace
+# Diagonal and trace
 
 M = np.round( 5*np.random.randn(4,4) )
 

@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
-# VIDEO: Algebraic and geometric interpretations
+# Algebraic and geometric interpretations
 # 2-dimensional vector
 v2 = [3, -2]
 
@@ -36,7 +36,7 @@ ax.plot([-4, 4], [0, 0], [0, 0], 'k--')
 plt.show()
 
 
-# VIDEO: Vector addition/subtraction
+# Vector addition/subtraction
 
 # two vectors in R2
 v1 = np.array([ 3, -1 ])
@@ -57,7 +57,7 @@ plt.grid()
 plt.show()
 
 
-# VIDEO: Vector-scalar multiplication
+# Vector-scalar multiplication
 # vector and scalar
 v1 = np.array([3, -1])
 l = -.3
@@ -72,7 +72,7 @@ plt.axis((-3, 3, -3, 3))
 plt.grid()
 plt.show()
 
-# VIDEO: Vector-vector multiplication: the dot product
+# Vector-vector multiplication: the dot product
 ## many ways to compute the dot product
 
 v1 = np.array([1, 2, 3, 4, 5])
@@ -97,7 +97,7 @@ for i in range(0, len(v1)):
 
 print(dp)
 
-# VIDEO: Dot product properties: associative and distributive
+# Dot product properties: associative and distributive
 ## Distributive property
 
 # create random vectors
@@ -154,7 +154,7 @@ for i in range(0, 6):
 
 print('result is ' + str(dp))
 
-# VIDEO: Vector length
+# Vector length
 
 # a vector
 v1 = np.array([1, 2, 3, 4, 5, 6, ])
@@ -167,7 +167,7 @@ vl = np.linalg.norm(v1)
 
 print(vl)
 
-# VIDEO: The dot product from a geometric perspective
+# The dot product from a geometric perspective
 
 
 # two vectors
@@ -204,7 +204,7 @@ print(pd1)
 pd2 = np.dot(s1*v1, s2*v2)
 print(pd2)
 
-# VIDEO: Vector Hadamard multiplication
+# Vector Hadamard multiplication
 # create vectors
 w1 = [ 1, 3, 5 ]
 w2 = [ 3, 4, 2 ]
@@ -212,7 +212,7 @@ w2 = [ 3, 4, 2 ]
 w3 = np.multiply(w1,w2)
 print(w3)
 
-# VIDEO: Vector outer product
+# Vector outer product
 
 v1 = np.array([  1, 2, 3 ])
 v2 = np.array([ -1, 0, 1 ])
@@ -227,7 +227,7 @@ for i in range(0,len(v1)):
         op[i,j] = v1[i] * v2[j]
 
 
-# VIDEO: Vector cross product
+# Vector cross product
 # create vectors
 v1  = [ -3,  2, 5 ]
 v2  = [  4, -3, 0 ]
@@ -259,7 +259,7 @@ ax.view_init(azim=150,elev=45)
 plt.show()
 
 
-# VIDEO: Hermitian transpose (a.k.a. conjugate transpose)
+# Hermitian transpose (a.k.a. conjugate transpose)
 
 # create a complex number
 z = np.complex(3,4)
@@ -280,7 +280,7 @@ print( v.T )
 print( np.transpose(v) )
 print( np.transpose(v.conjugate()) )
 
-# VIDEO: Unit vector
+# Unit vector
 
 # vector
 v1 = np.array([ -3, 6 ])
@@ -330,7 +330,7 @@ dp2 = np.dot(nv1, nv2)
 print(dp2)
 
 
-# VIDEO: Span
+# Span
 # set S
 S1 = np.array([1, 1, 0])
 S2 = np.array([1, 7, 0])
