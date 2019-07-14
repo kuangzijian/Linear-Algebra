@@ -1,17 +1,22 @@
 import numpy as np
+import matplotlib.pyplot as plt
 
-A = np.abs(np.round(5*np.random.randn(4,2)))
-B = np.abs(np.round(5*np.random.randn(2,3)))
+#Code challenge: is this vector in the span of this set?
 
-print(A)
-print(B)
+v =np.array([[1,2,3,4]])
+print(v)
 
-r1 = 0
-for i in range(0, len(B)):
-    r1 = r1 + np.outer(A[:,i], B[i])
-    print(A[:,i])
-    print(B[i])
+S =(np.array([[4,3,6,2],[0,4,0,1]]))
+Sv = np.concatenate((S,v), axis=0)
+print(S)
+print(np.linalg.matrix_rank(S))
+print(Sv)
+print(np.linalg.matrix_rank(Sv))
 
-print(r1)
+T = (np.array([[1,2,2,2],[0,0,1,2]]))
+Tv = np.concatenate((T,v), axis=0)
 
-print(np.matmul(A, B))
+print(T)
+print(np.linalg.matrix_rank(T))
+print(Tv)
+print(np.linalg.matrix_rank(Tv))
